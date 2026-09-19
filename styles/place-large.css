@@ -1,44 +1,47 @@
-main {
-    max-width: none;
-    position: relative;
-}
+@media screen and (min-width: 640px) {
 
-main > picture {
-    border-bottom: none;
-}
+    main {
+        max-width: none;
+        position: relative;
+    }
 
-.data, .weather {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 1rem;
-}
+    main > picture {
+        border-bottom: none;
+    }
 
-.data {
-    top: 4rem;
-    left: 2rem;
-}
+    .data, .weather {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 1rem;
+    }
 
-.weather {
-    top: 28rem;
-    right: 1rem;
-}
+    .data {
+        top: 4rem;
+        left: 2rem;
+    }
 
-.weather-icon {
-    display: none;
-}
+    .weather {
+        top: 28rem;
+        right: 1rem;
+    }
 
-.weather h2::after {
-    content: "⛅";
-    margin-left: 0.75rem;
-    
-}
+    .weather-icon {
+        display: none;
+    }
 
-.data h2, .weather h2 {
-    color: var(--accent-color);
-    background-color: var(--secondary-color);
-    padding: 0.75rem 1rem;
-    margin: -0.5rem 0 1.5rem -2rem;
-    width: 80%;
-    text-align: left;
-    white-space: nowrap;
+    .weather h2::after {
+        content: "⛅";
+        margin-left: 0.75rem;
+
+    }
+
+    .data h2, .weather h2 {
+        color: var(--accent-color);
+        background-color: var(--secondary-color);
+        padding: 0.75rem 1rem;
+        margin: -0.5rem 0 1.5rem -2rem;
+        width: 80%;
+        text-align: left;
+        white-space: nowrap;
+    }
 }
