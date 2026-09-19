@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The United States of America</title>
+    <meta name="description" content="Webpage with basic information on the United States of America and its climate">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 640px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>The United States of America</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/desktop-hero.webp" media="(min-width: 640px)">
+            <img src="images/mobile-hero.webp" alt="Picture of the American Flag hanging on a brick wall">
+        </picture>
+        <div class="data">
+            <h2>Data</h2>
+            <p><span>Area: </span>3,796,742 sq mi</p>
+            <p><span>Population: </span>~342 million</p>
+            <p><span>Capital: </span>Washington, D.C.</p>
+            <p><span>Language: </span>English</p>
+            <p><span>Currency: </span>United States Dollar</p>
+            <p><span>Time Zones: </span>9 Time Zones</p>
+            <p><span>Calling Code: </span>+1</p>
+            <p><span>Internet TLD: </span>.us</p>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            
+            <svg class="weather-icon" viewBox="0 0 64 64" aria-label="Partly cloudy weather" role="img">
+                <!-- Sun -->
+                <circle cx="43" cy="20" r="11" fill="#F4B942"></circle>
+
+                <!-- Sun rays -->
+                <g stroke="#F4B942" stroke-width="3" stroke-linecap="round">
+                    <line x1="43" y1="3" x2="43" y2="8"></line>
+                    <line x1="43" y1="32" x2="43" y2="37"></line>
+                    <line x1="26" y1="20" x2="31" y2="20"></line>
+                    <line x1="55" y1="20" x2="60" y2="20"></line>
+                    <line x1="31" y1="8" x2="35" y2="12"></line>
+                    <line x1="51" y1="28" x2="55" y2="32"></line>
+                    <line x1="55" y1="8" x2="51" y2="12"></line>
+                    <line x1="35" y1="28" x2="31" y2="32"></line>
+                </g>
+
+                <!-- Cloud -->
+                <path
+                    d="M16 51h30c7 0 12-5 12-11s-5-11-12-11c-1 0-3 0-4 .5C40 24 35 21 29 21c-9 0-16 7-16 16-6 0-10 3-10 7s4 7 13 7z"
+                    fill="#FFFFFF"
+                    stroke="#3C3B6E"
+                    stroke-width="2">
+                </path>
+            </svg>
+
+            <p><span>Temperature: </span><span id="temp-value"></span></p>
+            <p><span>Conditions: </span><span id="conditions-value"></span></p>
+            <p><span>Wind: </span><span id="wind-value"></span></p>
+            <p><span>Wind Chill: </span><span id="windchill-value"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Reid Howard | USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
