@@ -76,6 +76,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    min-height: 1500px;
 }
 
 h1 {
@@ -89,7 +90,6 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    min-height: 3000px;
 }
 
 .temple-grid section {
